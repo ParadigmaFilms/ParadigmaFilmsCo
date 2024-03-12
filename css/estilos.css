@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Protest Strike', sans-serif;
+}
+.header{
+    background-color: black;
+    color: white;
+}
+.listaNav{
+    list-style: none;
+    background-color: black;
+}
+.listaNav .linkNav{
+    text-decoration: none;
+    color: white;
+}
+.mainIndex{
+    .seccionTitulo{
+    height: 100vh;
+    background-image:url(../assests/img/cool-black-woman-with-skateboard-in-city-2023-11-27-05-37-20-utc.jpg);
+    background-size: cover;
+    background-position: center;
+    .dalePlay{
+        color: white;
+    }
+     .tituloPrincipal{
+        font-size: 3rem;
+        font-weight: 700;
+        .grosorFuenteBlack{
+            font-weight: 1000;
+        }
+    }
+    }
+    .seccionTarjetas{
+        background-color: white;
+        .tarjeta{
+            width: 400px;
+            height: 400px;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            .imgTarjeta{
+                width: 100%;
+                object-fit: contain;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.mainNosotros{
+    height: 70vh;
+    .seccionPrincipal{
+        width: 50%;
+        padding: 80px;
+        .fotoPerfil{
+            width: 60%;
+            padding: 80px;
+            border-radius: 50%;
+        }
+    }    
+ }
+
+.mainPortafolio{
+    height: 70vh;
+    .seccionPrincipal{
+        width: 50%;
+        padding: 80px;
+    }
+}
+.mainServicios{
+    .seccionTarjetas{
+        background-color: white;
+        .tarjeta{
+            width: 400px;
+            height: 400px;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            .imgTarjeta{
+                width: 100%;
+                object-fit: contain;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.mainContacto{
+    height: 70vh;
+    .seccionPrincipal{
+        width: 50%;
+        padding: 80px;
+        .fotoPerfil{
+            width: 60%;
+            padding: 80px;
+            border-radius: 50%;
+        }
+    }    
+ }
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+  
+h2{
+    color: black;
+}
+p{
+    color: black;
+}
+
+.footerEstilo{
+    background-color: black;
+    .footerClass{
+     color: white;
+ }
+}
