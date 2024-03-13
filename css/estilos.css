@@ -85,10 +85,9 @@ h2 {
         align-items: center;
     }
 .iconTamaño{
-    height: 300px;
     color: white;
     .iconFooter {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 }
 @media (min-width: 768px) {
@@ -117,14 +116,28 @@ h2 {
     h2 { color: black;
 }
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-}
 
 .imgGrid{
     height: auto;
     width: 200px;
+}
+
+@media (min-width: 992px) {
+    .custom-text {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .custom-text {
+      font-size: 12px;
+    }
+  }
+
+  .imgMargin {
+    margin: 0;
+}
+.img-small {
+    max-width: 90%;
+    height: auto;
 }
