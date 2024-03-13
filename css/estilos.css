@@ -141,3 +141,11 @@ h2 {
     max-width: 90%;
     height: auto;
 }
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
