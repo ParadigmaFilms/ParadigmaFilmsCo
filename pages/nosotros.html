@@ -4,64 +4,88 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paradigma Films Co</title>
-        <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/estilos.css">
-        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
-        <header class="header">
-            <a href="../index.html">
-                <img src="../assests/img/logo_blanco.png" width="85px" alt="logo">
-            </a>
-            <nav>
-                <ul class="listaNav">
-                    <li class="listaItem">
-                        <a class="linkNav" href="../index.html"> INICIO </a></li>
-                    <li class="listaItem">
-                        <a class="linkNav" href="./pages/nosotros.html"> NOSOTROS </a></li>
-                    <li class="listaItem">
-                        <a class="linkNav" href="./portafolio.html"> PORTAFOLIO </a></li>
-                    <li class="listaItem">
-                        <a class="linkNav" href="./servicios.html"> SERVICIOS </a></li>
-                    <li class="listaItem">
-                        <a class="linkNav" href="./contacto.html"> CONTACTO </a></li>
-                </ul>
-            </nav>
+        <header class="encabezado">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid alinearNav">
+                    <a href="../index.html">
+                        <img src="../assests/img/logoNegro.png" width="50px" height="auto" alt="logo">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                      </li> <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/portafolio.html">PORTAFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-        <main class="mainNosotros">
-            <section class="seccionPrincipal">
-                <h2> NOSOTROS </h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    <br> <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-                <br>
-                <h2> EXPERIENCIA </h2>
-                <P> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <main>
+            <section class="mt-2">
+                <h2 class="move-top p-4"> NOSOTROS </h2>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p> En Paradigma Films, nos enorgullece proyectar tu marca con creatividad y profesionalismo. Nuestra dedicación y experiencia en el sector audiovisual durante los últimos cuatro años nos han permitido desarrollar un enfoque único para representar tu identidad de manera auténtica y efectiva. Desde la captura aérea con drones hasta la creación de sitios web impresionantes, pasando por la gestión de contenido en redes sociales y la fotografía de calidad, estamos comprometidos a ofrecerte soluciones visuales que destaquen y fortalezcan tu marca.
+                            <br> <br>
+                            Proyectamos tu marca es más que un tagline para nosotros: es nuestro compromiso de brindarte resultados excepcionales que superen tus expectativas. En Paradigma Films, entendemos la importancia de cada proyecto y nos esforzamos por ofrecerte un servicio personalizado que se adapte a tus necesidades específicas. Confía en nosotros para dar vida a tu visión y llevar tu marca al siguiente nivel.</p>
+                      </div>
+                      <div class="col-md-6 img-column">
+                        <figure class="figure">
+                            <img src="../assests/img/Me.jpg" class="rounded-circle img-fluid max-img move-right" alt="Imagen Circular">
+                            <figcaption class="figure-caption figure-caption-centered move-right colorBlancoPie">Egel Yandi CEO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="bgText">
+                <h2 class="p-4"> EXPERIENCIA </h2>
+                <P class="p-4"> Claro, aquí tienes dos párrafos que explican el proceso de emprender en el ámbito audiovisual:
+
+                    Emprender en el ámbito audiovisual ha sido un viaje emocionante lleno de desafíos y aprendizajes constantes. Desde el inicio, nos sumergimos en un universo creativo y dinámico donde cada proyecto nos ha brindado la oportunidad de explorar nuevas técnicas, tendencias y tecnologías. La pasión por contar historias a través de imágenes y sonidos nos ha impulsado a enfrentar cada obstáculo con determinación y creatividad, siempre buscando superar las expectativas de nuestros clientes y espectadores.
+                    <br><br>
+                    El proceso de emprender en el ámbito audiovisual ha sido un verdadero viaje de autodescubrimiento y crecimiento profesional. Hemos aprendido a adaptarnos rápidamente a los cambios del mercado, a innovar constantemente en nuestras propuestas creativas y a construir relaciones sólidas con colaboradores y clientes. Cada proyecto nos ha enseñado lecciones valiosas sobre la importancia del trabajo en equipo, la perseverancia y la capacidad de reinventarnos en un sector en constante evolución. A pesar de los desafíos, el proceso de emprender en el ámbito audiovisual nos ha brindado una satisfacción incomparable al ver cómo nuestras ideas y esfuerzos cobran vida en la pantalla, impactando y emocionando a nuestro público.
                 </P>
-                <img class="fotoPerfil" src="../assests/img/Me.jpg" alt="fotoEgel">
             </section>
             <div> </div>
         </main> 
-        <footer class="footerEstilo">
-            <a href="../index.html">
-                <img src="../assests/img/logo_blanco.png" width="85px" alt="logo">
-            </a>
-            <p class="footerClass"> Todos los derechos reservados &copy; Paradigma Films Co.</p>
-        </footer>  
+        <footer>
+            <div class="d-flex">
+                <div class="col-md-2 p-3 iconFooter">
+                    <a href="../index.html">
+                        <img src="../assests/img/logo_blanco.png" width="50px" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-8 center">
+                    <p> Todos los derechos reservados &copy; Paradigma Films Co.</p>
+                </div>
+                <div class="col-md-2 center">
+                    <a href="https://www.instagram.com/paradigmafilmsco/" target="_blank"><i class="bi bi-instagram iconTamaño"></i></a>
+                </div>
+            </div>
+        </footer> 
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/all.min.js"></script>   
     </body>

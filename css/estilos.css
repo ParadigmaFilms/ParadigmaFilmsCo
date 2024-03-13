@@ -9,7 +9,10 @@
 .encabezado{
     background-color: black;
 }
-
+.colorBlancoPie{
+    color: white;
+    font-size: 20px;
+}   
 body{
     color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
@@ -70,16 +73,58 @@ h2 {
     letter-spacing: 2px;
     font-style: normal;
 }
+.half-screen {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .center {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-.iconFooter {
-    margin-left: 15px;
-}
 .iconTamaño{
-    height: 30px;
+    height: 300px;
     color: white;
+    .iconFooter {
+        margin-left: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .img-column {
+      order: 2;
+  }
+}
+.max-img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .move-right {
+    margin-left: 60px;
+}
+.move-top {
+    margin-top: 80px;
+}
+.figure-caption-centered {
+    text-align: center;
+    margin-top: 20px;
+}
+.bgText{
+    background-color: white;
+    color: black;
+    h2 { color: black;
+}
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.imgGrid{
+    height: auto;
+    width: 200px;
 }
