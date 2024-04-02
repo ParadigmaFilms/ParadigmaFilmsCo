@@ -1,0 +1,182 @@
+@import 'variables';
+@import 'reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    background-color: black;
+}
+.colorBlancoPie{
+    color: white;
+    font-size: 20px;
+}   
+body{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+.alinearNav{
+    justify-content: space-between;
+}
+h1 {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    color: #434242;
+    line-height: 1.0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+.tituloPrincipal{
+    font-size: 90px;
+}
+.boxVideo{
+    position: relative;
+    max-width: 100%;
+    display: inline-block;
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+.contenedor {
+    position: relative;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+}
+.tituloCentral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 90%;
+}
+h2 {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+.half-screen {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.iconTamaño{
+    color: white;
+    .iconFooter {
+        margin-left: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .img-column {
+      order: 2;
+  }
+}
+.max-img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .move-right {
+    margin-left: 60px;
+}
+.move-top {
+    margin-top: 80px;
+}
+.figure-caption-centered {
+    text-align: center;
+    margin-top: 20px;
+}
+.bgText{
+    background-color: white;
+    color: black;
+    h2 { color: black;
+}
+}
+
+.imgGrid{
+    height: auto;
+    width: 200px;
+}
+
+@media (min-width: 992px) {
+    .custom-text {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .custom-text {
+      font-size: 12px;
+    }
+  }
+
+  .imgMargin {
+    margin: 0;
+}
+.img-small {
+    max-width: 90%;
+    height: auto;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .inputTamaño1{
+    width: 50%;
+    min-height: 50px;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .inputTamaño2{
+    width: 50%;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    position: relative;
+  }
