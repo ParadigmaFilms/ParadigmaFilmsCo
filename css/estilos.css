@@ -44,56 +44,119 @@ img {
   height: auto;
 }
 
-.navbar {
-  z-index: 2;
-}
-
-.logo {
-  width: 50px;
-  height: auto;
-}
-
-.tituloPrincipal {
-  font-family: "Racing Sans One", sans-serif;
-  font-size: 70px;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-style: normal;
-}
-@media (max-width: 810px) {
-  .tituloPrincipal {
-    font-size: 22px;
-  }
-}
-
-.tu-marca {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-html, body {
-  height: 100%;
-}
-
-.navbar {
-  z-index: 2;
-}
-
 .encabezado {
   background-color: black;
 }
 
-.colorBlancoPie {
-  color: #ffffff;
-  font-size: 20px;
+.navbar {
+  z-index: 2;
 }
 
 .alinearNav {
   justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: gray;
+  position: relative;
+}
+.navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.navbar-nav .nav-link:hover:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .navbar-collapse {
+    justify-content: flex-start;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .navbar-collapse.show {
+    padding: 20px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: gray;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  font-size: 16px;
+}
+footer .iconFooter {
+  text-align: center;
+}
+footer .iconFooter img {
+  width: 50px;
+}
+footer .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .iconTamaño {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+footer .custom-text {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.move-top {
+  margin-top: 80px;
+}
+
+.move-right {
+  margin-left: 80px;
 }
 
 .tituloPrincipal {
@@ -164,41 +227,269 @@ h3 {
   }
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bgText {
+  background-color: #ffffff;
+  color: black;
+}
+
+.bgText {
+  background-color: #ffffff;
+  color: black;
+}
+.bgText h2 {
+  color: black;
+}
+
+.figure-caption-centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.max-img {
+  max-width: 100%;
+  max-height: 270px;
+}
+
+.imgpx {
+  max-height: 250px;
+}
+
+.imgGrid {
+  height: auto;
+  width: 200px;
+}
+
+.img-small {
+  max-width: 90%;
+  height: auto;
+}
+
+.titulo-servicios {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+@media (max-width: 810px) {
+  .titulo-servicios {
+    font-size: 2rem;
+  }
+}
+
+.cuadricula-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.tarjeta-servicio {
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+}
+.tarjeta-servicio img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.texto-tarjeta {
+  padding: 20px;
+}
+.texto-tarjeta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.texto-tarjeta p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.encabezado-contacto {
+  background-color: black;
+}
+
+.titulo-contacto {
+  font-size: 3rem;
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+@media (max-width: 810px) {
+  .titulo-contacto {
+    font-size: 2rem;
+  }
+}
+
+.formulario-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-contacto {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.input-contacto:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.textarea-contacto {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+}
+.textarea-contacto:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.boton-contacto {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.boton-contacto:hover {
+  background-color: #0056b3;
+}
+
+.custom-text {
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  .custom-text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .custom-text {
+    font-size: 18px;
+  }
 }
 
 .iconTamaño {
   color: #ffffff;
 }
 
-@media (max-width: 810px) {
-  .tituloPrincipal {
-    font-size: 3rem;
-  }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado {
+  background-color: black;
+}
+
+.alinearNav {
+  justify-content: space-between;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.move-top {
+  margin-top: 80px;
+}
+
+.move-right {
+  margin-left: 80px;
+}
+
+h2 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 35px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
 }
 @media (max-width: 810px) {
-  .tu-marca {
-    font-size: 2rem;
+  h2 {
+    font-size: 22px;
   }
 }
-@media (min-width: 768px) {
-  .img-column {
-    order: 2;
+
+h3 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 35px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #ffffff;
+}
+@media (max-width: 810px) {
+  h3 {
+    font-size: 22px;
   }
 }
-@media (max-width: 768px) {
-  .img-wrapper {
-    display: block !important;
-  }
+
+.bgText {
+  background-color: #ffffff;
+  color: black;
 }
-@media (min-width: 769px) {
-  .img-wrapper {
-    display: flex !important;
-  }
+
+.bgText {
+  background-color: #ffffff;
+  color: black;
 }
+.bgText h2 {
+  color: black;
+}
+
+.figure-caption-centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.max-img {
+  max-width: 100%;
+  max-height: 270px;
+}
+
+.imgpx {
+  max-height: 250px;
+}
+
+.imgGrid {
+  height: auto;
+  width: 200px;
+}
+
+.img-small {
+  max-width: 90%;
+  height: auto;
+}
+
 .card {
   border: none;
   transition: all 0.3s ease;
@@ -234,114 +525,22 @@ h3 {
   transition: opacity 0.3s ease-in-out;
 }
 
-.max-img {
-  max-width: 100%;
-  max-height: 270px;
+.container {
+  margin-top: 5rem;
 }
 
-.imgpx {
-  max-height: 250px;
-}
-
-.move-right {
-  margin-left: 80px;
-}
-
-.move-top {
-  margin-top: 80px;
-}
-
-.figure-caption-centered {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.bgText {
-  background-color: #ffffff;
-  color: black;
-}
-
-.bgText {
-  background-color: #ffffff;
-  color: black;
-}
-.bgText h2 {
-  color: black;
-}
-
-.imgGrid {
-  height: auto;
-  width: 200px;
-}
-
-@media (min-width: 992px) {
-  .custom-text {
-    font-size: 18px;
+@media (max-width: 768px) {
+  .container {
+    margin-top: 8rem;
   }
 }
-@media (max-width: 991px) {
-  .custom-text {
-    font-size: 12px;
+@media (max-width: 576px) {
+  .container {
+    margin-top: 10rem;
   }
 }
-.imgMargin {
-  margin: 0;
-}
-
-.img-small {
-  max-width: 90%;
-  height: auto;
-}
-
-.inputTamaño1 {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-.inputTamaño1:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.inputTamaño2 {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-.inputTamaño2:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #ffffff;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.button:hover {
-  background-color: #6c757d;
-}
-
-.btn-animated {
-  animation: pulse 1s infinite alternate;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
+@media (max-width: 480px) {
+  .container {
+    margin-top: 12rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

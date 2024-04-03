@@ -1,0 +1,111 @@
+.move-top {
+    margin-top: 80px;
+  }
+  
+  .move-right {
+    margin-left: 80px;
+  }
+  
+  .tituloPrincipal {
+    font-size: 70px;
+    
+    @media (max-width: 810px) {
+      font-size: 3rem;
+    }
+  }
+  
+  .tituloCentral {
+    font-family: "Racing Sans One", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .boxVideo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .video-responsive {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  h2 {
+    font-family: $font-family-heading;
+    font-size: $font-size-small;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+  
+    @media (max-width: 810px) {
+      font-size: $font-size-small-responsive;
+    }
+  }
+  
+  h3 {
+    font-family: $font-family-heading;
+    font-size: $font-size-small;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: $light-color;
+    
+    @media (max-width: 810px) {
+      font-size: $font-size-small-responsive;
+    }
+  }
+  
+  .bgText {
+    background-color: $light-color;
+    color: black;
+  }
+  
+  .bgText {
+    background-color: $light-color;
+    color: black;
+  
+    h2 {
+      color: black;
+    }
+  }
+  
+  .figure-caption-centered {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .max-img {
+    max-width: 100%;
+    max-height: 270px;
+  }
+  
+  .imgpx {
+    max-height: 250px;
+  }
+  
+  .imgGrid {
+    height: auto;
+    width: 200px;
+  }
+  
+  .img-small {
+    max-width: 90%;
+    height: auto;
+  }
+  
