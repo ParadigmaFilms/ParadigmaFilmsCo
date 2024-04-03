@@ -1,0 +1,29 @@
+.navbar {
+    z-index: 2;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.tituloPrincipal {
+    font-family: $font-family-heading;
+    font-size: 70px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+
+    @media (max-width: 810px) {
+        font-size: #{$font-size-small-responsive};
+    }
+}
+
+.tu-marca {
+    font-size: 2rem;
+    color: $light-color;
+}
