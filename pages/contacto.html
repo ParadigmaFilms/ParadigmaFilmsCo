@@ -12,50 +12,54 @@
     </head>
     <body>
         <header class="encabezado">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container-fluid alinearNav">
-                    <a href="../index.html">
-                        <img src="../assests/img/logoNegro.png" width="50px" height="auto" alt="logo">
-                    </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                      </li> <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/portafolio.html">PORTAFOLIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid alinearNav">
+              <a href="../index.html">
+                <img src="../assests/img/logoNegro.png" width="50px" height="auto" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/portafolio.html">PORTAFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>          
         </header>
         <main>
-            <section>
+            <div class="content">
                 <h2 class="move-top p-4"> CONTACTO </h2>
-                <section>
-                  <div class="column-content form-group"></class=> <h3 class=""> TRABAJEMOS JUNTOS </h3>
-                    <div class="container text-center">
-                    <p class="mr-3"> cuentame de tu proyecto por medio de un correo y me pondre en contacto contigo </p> <br>
+                <section class="d-flex align-items-center">
+                  <div class="column-content form-group mx-auto text-center">
+                    <h3>TRABAJEMOS JUNTOS</h3>
+                    <div class="container">
+                      <p>Cuéntame de tu proyecto por medio de un correo y me pondré en contacto contigo.</p>
                       <form action="./pages/404.html">
-                        <input class="inputTamaño1"  type="name" placeholder="Nombre" required id="name" name="name"><br>
-                        <input class="inputTamaño1"  type="email" placeholder="Correo Electronico" required id="email" name="email"><br>
-                        <input class="inputTamaño2" type="mensaje" id="mensaje" name="mensaje" placeholder="Deja tu mensaje aquí"><br>
-                        <input class="button" type="submit" value="Enviar"></input>
+                        <input class="form-control inputTamaño1" type="text" placeholder="Nombre" required id="name" name="name"><br>
+                        <input class="form-control inputTamaño1" type="email" placeholder="Correo Electrónico" required id="email" name="email"><br>
+                        <textarea class="form-control inputTamaño2" id="mensaje" name="mensaje" rows="4" placeholder="Deja tu mensaje aquí"></textarea><br>
+                        <input class="button" type="submit" value="Enviar">
                       </form>
                     </div>
+                  </div>
                 </section>
+            </div>
         </main> 
         <footer>
           <div class="d-flex">

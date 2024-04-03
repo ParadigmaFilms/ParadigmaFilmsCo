@@ -5,7 +5,15 @@
   margin: 0;
   padding: 0;
 }
-
+html, body {
+  height: 100%;
+}
+.navbar {
+  z-index: 2;
+}
+.content {
+  min-height: calc(100vh - 170px);
+}
 .encabezado {
   background-color: black;
 }
@@ -29,26 +37,41 @@ h1 {
   font-family: "Racing Sans One", sans-serif;
   font-size: 70px;
   font-weight: 400;
-  color: #434242;
+  color: #ffffff;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-style: normal;
 }
-
+.text-sm {
+  font-size: 50px;
+}
 .tituloPrincipal {
-  font-size: 90px;
+  font-size: 80px;
+}
+
+.tituloCentral {
+  font-family: "Racing Sans One", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
 }
 
 .boxVideo {
   position: relative;
-  max-width: 100%;
-  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
-.boxVideo video {
-  max-width: 100%;
+
+.video-responsive {
+  width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 .contenedor {
@@ -58,22 +81,19 @@ h1 {
   overflow: hidden;
 }
 
-.tituloCentral {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Racing Sans One", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  max-width: 90%;
-}
-
 h2 {
   font-family: "Racing Sans One", sans-serif;
   font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+h3 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 34px;
   font-weight: 400;
   color: #ffffff;
   line-height: 1.5;
@@ -107,13 +127,38 @@ h2 {
     order: 2;
   }
 }
+@media (max-width: 768px) {
+  .img-wrapper {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .img-wrapper {
+    display: flex !important;
+  }
+}
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
 .max-img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 270px;
+}
+.imgpx {
+max-height: 250px;
 }
 
 .move-right {
-  margin-left: 60px;
+  margin-left: 80px;
 }
 
 .move-top {
@@ -137,7 +182,6 @@ h2 {
   height: auto;
   width: 200px;
 }
-
 @media (min-width: 992px) {
   .custom-text {
     font-size: 18px;
@@ -157,41 +201,54 @@ h2 {
   height: auto;
 }
 
-.column-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .inputTamaño1 {
-  width: 50%;
-  min-height: 50px;
-  padding: 20px;
-  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
-
+.inputTamaño1:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
 .inputTamaño2 {
-  width: 50%;
-  min-height: 100px;
-  padding: 20px;
-  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+.inputTamaño2:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #6d6d6d;
 }
 
-.button {
-  background-color: #ffffff;
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition-duration: 0.4s;
-  overflow: hidden;
-  position: relative;
-}/*# sourceMappingURL=estilos.css.map */
+.btn-animated {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
