@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+.navbar {
+  z-index: 2;
+}
+.content {
+  min-height: calc(100vh - 170px);
+}
+.encabezado {
+  background-color: black;
+}
+
+.colorBlancoPie {
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+.alinearNav {
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+.text-sm {
+  font-size: 50px;
+}
+.tituloPrincipal {
+  font-size: 5rem;
+}
+
+.tituloCentral {
+  font-family: "Racing Sans One", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.boxVideo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video-responsive {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+h3 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+
+.half-screen {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconTamaño {
+  color: white;
+}
+.iconTamaño .iconFooter {
+  margin-left: 20px;
+}
+@media (max-width: 810px) {
+  .tituloPrincipal {
+      font-size: 3rem;
+  }
+}
+@media (max-width: 810px) {
+  .tu-marca {
+      font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .img-column {
+    order: 2;
+  }
+}
+@media (max-width: 768px) {
+  .img-wrapper {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .img-wrapper {
+    display: flex !important;
+  }
+}
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay img {
+  transition: filter 0.3s ease-in-out, brightness 0.3s ease-in-out;
+}
+
+.card-overlay:hover img {
+  filter: blur(5px);
+  filter: brightness(0.5);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-overlay:hover .overlay-text {
+  opacity: 1;
+}
+.max-img {
+  max-width: 100%;
+  max-height: 270px;
+}
+.imgpx {
+max-height: 250px;
+}
+
+.move-right {
+  margin-left: 80px;
+}
+
+.move-top {
+  margin-top: 80px;
+}
+
+.figure-caption-centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bgText {
+  background-color: white;
+  color: black;
+}
+.bgText h2 {
+  color: black;
+}
+
+.imgGrid {
+  height: auto;
+  width: 200px;
+}
+@media (min-width: 992px) {
+  .custom-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .custom-text {
+    font-size: 12px;
+  }
+}
+.imgMargin {
+  margin: 0;
+}
+
+.img-small {
+  max-width: 90%;
+  height: auto;
+}
+
+.inputTamaño1 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.inputTamaño1:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.inputTamaño2 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+.inputTamaño2:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #6d6d6d;
+}
+
+.btn-animated {
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

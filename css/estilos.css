@@ -48,7 +48,7 @@ h1 {
   font-size: 50px;
 }
 .tituloPrincipal {
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .tituloCentral {
@@ -121,7 +121,16 @@ h3 {
 .iconTamaño .iconFooter {
   margin-left: 20px;
 }
-
+@media (max-width: 810px) {
+  .tituloPrincipal {
+      font-size: 3rem;
+  }
+}
+@media (max-width: 810px) {
+  .tu-marca {
+      font-size: 2rem;
+  }
+}
 @media (min-width: 768px) {
   .img-column {
     order: 2;
@@ -148,6 +157,33 @@ h3 {
 .card img {
   max-width: 100%;
   height: auto;
+}
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay img {
+  transition: filter 0.3s ease-in-out, brightness 0.3s ease-in-out;
+}
+
+.card-overlay:hover img {
+  filter: blur(5px);
+  filter: brightness(0.5);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-overlay:hover .overlay-text {
+  opacity: 1;
 }
 .max-img {
   max-width: 100%;
