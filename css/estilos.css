@@ -536,4 +536,23 @@ h3 {
   .container {
     margin-top: 12rem;
   }
+}
+.custom-text {
+  font-size: 1em;
+  font-family: "Racing Sans One, sans-serif";
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.custom-text {
+  font-size: 1em;
+  font-family: "Racing Sans One, sans-serif";
+}
+
+.footer {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=estilos.css.map */

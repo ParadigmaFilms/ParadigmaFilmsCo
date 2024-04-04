@@ -1,9 +1,17 @@
 @mixin colors($background, $text) {
     background-color: $background;
     color: $text;
-  }
+}
 
-  @mixin font($size, $family) {
+@mixin font($size, $family) {
     font-size: $size;
     font-family: $family;
-  }
+}
+
+.custom-text {
+    @include font(1em, "Racing Sans One, sans-serif");
+}
+
+.footer {
+    @include colors(black, white);
+}

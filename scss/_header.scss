@@ -1,5 +1,6 @@
 .encabezado {
-    background-color: black;
+  .encabezado {
+    @include colors(black, white);
   }
   
   .navbar {
