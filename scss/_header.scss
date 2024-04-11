@@ -1,9 +1,4 @@
-.encabezado {
-  .encabezado {
-    @include colors(black, white);
-  }
-  
-  .navbar {
+.navbar {
     z-index: 2;
   }
   

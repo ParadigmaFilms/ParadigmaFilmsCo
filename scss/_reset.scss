@@ -9,18 +9,19 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     background-color: black;
     color: #fff;
     height: 100%;
+    font-family: map-get($misFuentes, principal);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @include font(1.5rem, "Racing Sans One, sans-serif");
-}
 p {
     margin: 0;
+}
+
+h1 {
+    font-size: map-get($tamaniosFuente, tituloPrincipal);
 }
 
 ul, ol {

@@ -27,5 +27,6 @@ footer {
     text-align: center;
     font-size: 16px;
     margin: 0 auto;
+    @include font(1em, "Racing Sans One, sans-serif");
   }
 }
